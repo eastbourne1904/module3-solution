@@ -1,0 +1,106 @@
+/** HEADER **/
+#header-nav {
+  border-radius: 0;
+  background-color: grey;
+  border-color: black;
+  border-width: medium;
+}
+.navbar-brand h3 { /* Restaurant name */
+  color: #000000;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+#nav-list {
+  margin-top: 2px;
+  text-align: center;
+  padding-right: 5px;
+  background-color: white;
+  overflow: hidden; /* Hide scrollbars */
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+hr {
+  border-color: #000000;
+  margin:0;
+}
+h3 {
+  text-align: center;
+}
+#pBox {
+  background-color: grey;
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+h5 {
+  text-align: center;
+}
+body {
+  font-family: 'Londrina Solid', cursive;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #pBox {
+    .col-lg-10;
+  }
+  #nav-list {
+    display: none;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #pBox {
+    .col-m-10;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #nav-list {
+    display: none;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #pBox {
+    .col-s-10;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #nav-list {
+    display: none;
+  }
+  .hidden-sm {
+  display: none !important;
+  }
+}
+
+/********** XSmall devices only **********/
+@media (max-width: 767px) {
+  #pBox {
+    .col-xs-10;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .visible-xs {
+  display:block !important;
+  }
+}
